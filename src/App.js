@@ -8,7 +8,7 @@ export default function App() {
 
   const [data, setData] = useState([])
   useEffect(()=>{
-    fetch('https://fakestoreapi.com/products/')
+    fetch('https://fakestoreapi.com/products/')  // https://fakestoreapi.com/products/1 pehle yeh thi yeh jo /1 hai isko nahi lagana tha
             .then(res=>res.json())
             .then(json=>setData(json))
   })
