@@ -12,7 +12,7 @@ export default function Products({data}) {
   // const dispatch = useDispatch()
   return (
     <>
-    <img src="https://i.pinimg.com/originals/c7/e1/b7/c7e1b7b5753737039e1bdbda578132b8.gif" style={{height : "100%"}} alt="" />:
+    {/* <img src="https://i.pinimg.com/originals/c7/e1/b7/c7e1b7b5753737039e1bdbda578132b8.gif" style={{height : "100%"}} alt="" />: */}
     <div style={{display : "flex", flexWrap: "wrap", gap:"15px",margin:"5px"}} >
     {data.map((allData)=>
       <Card sx={{ maxWidth: 345 }}>
@@ -21,7 +21,7 @@ export default function Products({data}) {
         component="img"
         alt="green iguana"
         height="140"
-        image="allData.image"
+        image={allData.image}
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
